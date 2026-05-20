@@ -4,6 +4,20 @@ A curated collection of agent skills I created and use.
 
 This repo contains my own skills plus a small curated set of local skills I keep around. Some third-party skills are intentionally **not vendored here**; install them from their original sources instead so they stay properly credited and up to date.
 
+## Install
+
+Install this skill collection with `npx`:
+
+```sh
+npx skills@latest add elithecho/skills
+```
+
+Or with `bunx`:
+
+```sh
+bunx skills@latest add elithecho/skills
+```
+
 ## Included Skills
 
 | Skill | Description |
