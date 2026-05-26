@@ -27,6 +27,7 @@ bunx skills@latest add elithecho/skills
 | **plan** | Self-correcting execution plans for risky or cross-component work |
 | **ruby-llm** | Ruby LLM integration skill for chat, embeddings, tools, Rails, and more |
 | **security-review** | Comprehensive security review on code |
+| **worktree** | Manage Git worktrees with the [`wt`](https://github.com/elithecho/wt) CLI |
 
 ## My Skills
 
@@ -36,6 +37,7 @@ These are mine / maintained as part of this curated collection:
 - [`plan`](./skills/plan/)
 - [`orchestrate`](./skills/orchestrate/)
 - [`ruby-llm`](./skills/ruby-llm/)
+- [`worktree`](./worktree/) — helper workflows for the [`wt`](https://github.com/elithecho/wt) CLI
 
 ## Third-Party Sources
 
