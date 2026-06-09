@@ -23,10 +23,12 @@ bunx skills@latest add elithecho/skills
 | Skill | Description |
 |-------|-------------|
 | **frontend-component** | Split frontend UI into logical, composable components |
+| **improve-frontend-component** | Plan frontend component refactoring opportunities and recommend where to split UI |
 | **orchestrate** | Bounded delegated implementation workflow |
 | **plan** | Self-correcting execution plans for risky or cross-component work |
 | **ruby-llm** | Ruby LLM integration skill for chat, embeddings, tools, Rails, and more |
 | **security-review** | Comprehensive security review on code |
+| **staged-workflow** | Plan and coordinate multi-agent implementation work with contract-first sequencing |
 | **worktree** | Manage Git worktrees with the [`wt`](https://github.com/elithecho/wt) CLI |
 
 ## My Skills
@@ -34,10 +36,13 @@ bunx skills@latest add elithecho/skills
 These are mine / maintained as part of this curated collection:
 
 - [`frontend-component`](./skills/frontend-component/)
-- [`plan`](./skills/plan/)
+- [`improve-frontend-component`](./skills/improve-frontend-component/)
 - [`orchestrate`](./skills/orchestrate/)
+- [`plan`](./skills/plan/)
 - [`ruby-llm`](./skills/ruby-llm/)
-- [`worktree`](./worktree/) — helper workflows for the [`wt`](https://github.com/elithecho/wt) CLI
+- [`security-review`](./skills/security-review/)
+- [`staged-workflow`](./skills/staged-workflow/)
+- [`worktree`](./skills/worktree/) — helper workflows for the [`wt`](https://github.com/elithecho/wt) CLI
 
 ## Third-Party Sources
 
@@ -62,11 +67,7 @@ Skills sourced from Matt include:
 - `to-issues` — Break plans into grabbable issues
 - `tdd` — Red-green-refactor test-driven development
 - `diagnose` — Bug diagnosis and performance regression loop
-- `triage` — Issue triage state machine
 - `write-a-skill` — Create new agent skills with proper structure
-- `skill` — Manage local skills
-- `skill-creator` — Guide for creating effective agent skills
-- `visual-verdict` — Structured visual QA comparisons
 
 ### Vercel Labs agent-browser
 
