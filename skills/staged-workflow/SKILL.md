@@ -57,7 +57,8 @@ Use this default sequence unless the project clearly needs a simpler version:
 4. **Wave 2: Parallel model/protocol work** — backend protocol, frontend state models, parsing, reducers.
 5. **Wave 3: Parallel feature/UI work** — user-facing pieces that consume locked state/contracts.
 6. **Wave 4: Integrated controls** — commands or behavior requiring both sides, such as cancel/steer/retry.
-7. **Wave 5: Cross-cutting review and final verification** — incident review, security review, tests, manual path.
+7. **Wave 4.5: Documentation executor** — one dedicated executor updates user, operator, developer, domain-language, and architecture sources of truth from the implemented behavior. It owns documentation files and must not edit implementation files.
+8. **Wave 5: Cross-cutting review and final verification** — incident review, security review, documentation accuracy, tests, manual path.
 
 ### 4. Add Non-Overlap Rules
 
@@ -70,6 +71,8 @@ For each executor task, specify:
 - verification
 
 Call out high-conflict files explicitly. If many tasks need the same large file, require an early helper/type extraction or serialize those tasks.
+
+The documentation executor must have exclusive ownership of its listed documentation files during its wave. Implementation executors must provide behavior and verification evidence but must not independently edit those same files. Start the documentation wave only when the behavior it describes is stable; it may run alongside unrelated implementation work with non-overlapping files.
 
 ### 5. Add Review Gates
 
@@ -96,6 +99,18 @@ Write tasks in this format:
   - Verification:
 ```
 
+For the documentation executor:
+
+```md
+- [ ] **Docs-N: Update documentation from implemented behavior**
+  - Files:
+  - Depends on:
+  - Must not touch: implementation files
+  - Evidence supplied by:
+  - Deliverable: updated sources of truth, or a documented reason no change is required
+  - Verification:
+```
+
 For review gates:
 
 ```md
@@ -113,6 +128,8 @@ End with one cross-cutting verification task that includes:
 - build/typecheck commands
 - integration or regression tests
 - manual critical-path scenario
+- documentation accuracy and link validation
+- confirmation that domain terms and ADRs were updated when required
 - incident/security review if relevant
 
 ## Output Shape
@@ -123,6 +140,7 @@ Update the plan with:
 - `## Fan-Out Order and Non-Overlap Rules`
 - wave checkboxes
 - review gates
+- a dedicated documentation executor task
 - final verification checklist
 
 Keep it project-specific in the plan. Keep this skill generic.

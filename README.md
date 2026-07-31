@@ -26,6 +26,7 @@ bunx skills@latest add elithecho/skills
 | **improve-frontend-component** | Plan frontend component refactoring opportunities and recommend where to split UI |
 | **orchestrate** | Bounded delegated implementation workflow |
 | **plan** | Self-correcting execution plans for risky or cross-component work |
+| **pr-description** | Write concise, evidence-backed pull request descriptions with conditional bug and rollout sections |
 | **ruby-llm** | Ruby LLM integration skill for chat, embeddings, tools, Rails, and more |
 | **security-review** | Comprehensive security review on code |
 | **staged-workflow** | Plan and coordinate multi-agent implementation work with contract-first sequencing |
@@ -39,6 +40,7 @@ These are mine / maintained as part of this curated collection:
 - [`improve-frontend-component`](./skills/improve-frontend-component/)
 - [`orchestrate`](./skills/orchestrate/)
 - [`plan`](./skills/plan/)
+- [`pr-description`](./skills/pr-description/)
 - [`ruby-llm`](./skills/ruby-llm/)
 - [`security-review`](./skills/security-review/)
 - [`staged-workflow`](./skills/staged-workflow/)
